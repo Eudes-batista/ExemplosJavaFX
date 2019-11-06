@@ -35,21 +35,21 @@ public class FXMLTableViewButtonController implements Initializable {
         columnCurso.setCellValueFactory(new PropertyValueFactory<>("curso"));
         listarCursos();
         tabela.setItems(cursos);
-        
+
     }
 
     private void listarCursos() {
         cursos.clear();
-        cursos.add(new CursoButton(1, "Java"));
-        cursos.add(new CursoButton(2, "Java Script"));
-        cursos.add(new CursoButton(3, "Type Script"));
-        cursos.add(new CursoButton(4, "JavaFX"));
-        cursos.add(new CursoButton(5, "AngularJs"));
-        cursos.add(new CursoButton(6, "Angular"));
-        cursos.add(new CursoButton(7, "Spring boot"));
-        cursos.add(new CursoButton(8, "Php"));
-        cursos.add(new CursoButton(9, "Python"));
-        cursos.add(new CursoButton(10, "C#"));
+        cursos.add(new CursoButton(1, "Java",this.cursos));
+        cursos.add(new CursoButton(2, "Java Script",this.cursos));
+        cursos.add(new CursoButton(3, "Type Script",this.cursos));
+        cursos.add(new CursoButton(4, "JavaFX",this.cursos));
+        cursos.add(new CursoButton(5, "AngularJs",this.cursos));
+        cursos.add(new CursoButton(6, "Angular",this.cursos));
+        cursos.add(new CursoButton(7, "Spring boot",this.cursos));
+        cursos.add(new CursoButton(8, "Php",this.cursos));
+        cursos.add(new CursoButton(9, "Python",this.cursos));
+        cursos.add(new CursoButton(10, "C#",this.cursos));
     }
-    
+
 }
