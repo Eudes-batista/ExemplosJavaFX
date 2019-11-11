@@ -64,6 +64,7 @@ public class FXMLTableViewButtonCellFactoryController implements Initializable {
                     button.setOnAction(evt -> {
                         cursos.remove(getIndex());
                     });
+                    setGraphic(button);
                 } else {
                     setGraphic(null);
                 }
