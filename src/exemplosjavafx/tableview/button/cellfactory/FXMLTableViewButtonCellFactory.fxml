@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exemplosjavafx.tableview.button.cellfactory.FXMLTableViewButtonCellFactoryController">
+   <children>
+      <TableView fx:id="tabela" layoutX="46.0" layoutY="23.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="columnButton" prefWidth="93.0" text="Excluir" />
+          <TableColumn fx:id="columnId" prefWidth="103.0" text="ID" />
+            <TableColumn fx:id="columnCurso" prefWidth="402.0" text="CURSO" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

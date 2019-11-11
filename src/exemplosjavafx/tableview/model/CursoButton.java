@@ -42,6 +42,11 @@ public class CursoButton {
         });
     }
 
+    public CursoButton(Integer codigo, String curso) {
+        this.codigo = codigo;
+        this.curso = curso;
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;
