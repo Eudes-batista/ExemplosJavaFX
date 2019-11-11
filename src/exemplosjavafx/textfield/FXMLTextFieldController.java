@@ -17,26 +17,26 @@ public class FXMLTextFieldController implements Initializable {
 
     @FXML
     private TextField textfieldApenasNumeroLimitado;
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+
         textfieldNumero.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-             this.textfieldNumero.setText(newValue.replaceAll("\\D", ""));
+            this.textfieldNumero.setText(newValue.replaceAll("\\D", ""));
         });
-        
+
         textfieldLetra.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-             this.textfieldLetra.setText(newValue.replaceAll("\\d", ""));
+            this.textfieldLetra.setText(newValue.replaceAll("\\d", ""));
         });
-        
+
         textfieldApenasNumeroLimitado.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-            if(newValue.length() <= 10) {
+            if (newValue.length() <= 10) {
                 this.textfieldApenasNumeroLimitado.setText(newValue.replaceAll("\\D", ""));
-            }else{
-                this.textfieldApenasNumeroLimitado.setText(oldValue);                
+            } else {
+                this.textfieldApenasNumeroLimitado.setText(oldValue);
             }
         });
-        
-    }    
-    
+
+    }
+
 }
