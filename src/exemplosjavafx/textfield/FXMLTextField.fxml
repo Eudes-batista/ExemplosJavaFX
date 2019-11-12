@@ -12,17 +12,22 @@
             <Font size="51.0" />
          </font>
       </Text>
-      <TextField fx:id="textfieldNumero" alignment="CENTER" layoutX="192.0" layoutY="154.0" promptText="Apenas número">
+      <TextField fx:id="textfieldNumero" alignment="CENTER" layoutX="192.0" layoutY="101.0" promptText="Apenas número">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="textfieldLetra" alignment="CENTER" layoutX="192.0" layoutY="224.0" promptText="Apenas letra">
+      <TextField fx:id="textfieldLetra" alignment="CENTER" layoutX="192.0" layoutY="171.0" promptText="Apenas letra">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="textfieldApenasNumeroLimitado" alignment="CENTER" layoutX="134.0" layoutY="284.0" prefHeight="35.0" prefWidth="333.0" promptText="Apanes número limitando o tamanho">
+      <TextField fx:id="textfieldApenasNumeroLimitado" alignment="CENTER" layoutX="134.0" layoutY="231.0" prefHeight="35.0" prefWidth="333.0" promptText="Apanes número limitando o tamanho">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textfieldLetraMaiusculas" alignment="CENTER" layoutX="192.0" layoutY="309.0" prefHeight="35.0" prefWidth="231.0" promptText="Apenas letras Maiúsculas">
          <font>
             <Font size="18.0" />
          </font>

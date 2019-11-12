@@ -17,6 +17,9 @@ public class FXMLTextFieldController implements Initializable {
 
     @FXML
     private TextField textfieldApenasNumeroLimitado;
+    
+    @FXML
+    private TextField textfieldLetraMaiusculas;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -35,6 +38,10 @@ public class FXMLTextFieldController implements Initializable {
             } else {
                 this.textfieldApenasNumeroLimitado.setText(oldValue);
             }
+        });
+        
+        textfieldLetraMaiusculas.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            this.textfieldLetraMaiusculas.setText(newValue.toUpperCase());
         });
 
     }
